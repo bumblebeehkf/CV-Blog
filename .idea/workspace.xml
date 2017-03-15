@@ -2,72 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e70c9a8-f712-4298-bf1a-5f304d27b89d" name="Default" comment="Default">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/avatar/7623d6bbc882b50f3cbcea7e0dd3136d.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/avatar/avatar1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/avatar/avatar2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/avatar/bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/avatar/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/avatar/v2-5bb6cc9e4482762a915c6d0386f84c21_b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/avatar1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/avatar2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/home-header-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/myBlog_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/myBlog.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/article.mustache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/article_comments.mustache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/avatar/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/blog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/blog.login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/blog.post.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/blog.write.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/article.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jq/jquery-3.1.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/signIn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/signOut.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/signUp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/success.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/write.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/.bin/mustache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/.bin/mustache.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/bin/mustache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/mustache.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/mustache.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/dojo/mustache.js.post" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/dojo/mustache.js.pre" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/jquery/mustache.js.post" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/jquery/mustache.js.pre" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/mootools/mustache.js.post" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/mootools/mustache.js.pre" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/qooxdoo/mustache.js.post" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/qooxdoo/mustache.js.pre" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/yui3/mustache.js.post" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/node_modules/mustache/wrappers/yui3/mustache.js.pre" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/signIn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/signOut.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/signUp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/success.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/success_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/write.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routers/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routers/posts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routers/signIn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routers/signUp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -164,10 +99,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="198" />
-    <option name="y" value="120" />
+    <option name="x" value="263" />
+    <option name="y" value="158" />
     <option name="width" value="1880" />
-    <option name="height" value="862" />
+    <option name="height" value="793" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="添加" />
@@ -225,7 +160,7 @@
     <property name="nodejs_interpreter_path" value="C:\sofeware\node\node.exe" />
     <property name="jsx.switch.disabled" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\sofeware\node\node.exe" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.9.5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -297,18 +232,25 @@
       <workItem from="1488509574148" duration="629000" />
       <workItem from="1488599533036" duration="143000" />
     </task>
+    <task id="LOCAL-00001" summary="Default">
+      <created>1489580146355</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1489580146355</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="56802000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="198" y="120" width="1880" height="862" extended-state="0" />
+    <frame x="263" y="158" width="1880" height="793" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18845315" sideWeight="0.49525103" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17715959" sideWeight="0.504749" order="4" side_tool="true" content_ui="tabs" />
