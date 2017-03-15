@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="shortcut icon"  type="images/x-icon" href="img/favicon.ico" >
+
+    <!--样式表-->
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blog.login.css">
+    <link rel="stylesheet" href="css/blog.post.css">
+
+    <!--第三方js库-->
+    <script src="js/jq/jquery-3.1.1.js"></script>
+    <script src="node_modules/mustache/mustache.min.js"></script>
+
+</head>
+
+<body>
+
+<div class='main'>
+    <div class='nav'>
+        <div class='nav-title'><a href="index.html">Blog</a></div>
+        <div class='nav-login'>
+            <img src='img/bar.png'>
+            <div class='nav-login-box' style='display:none'>
+                <div class='signIn'><a href="signIn.html">登录</a></div>
+                <div class='signUp'><a href="signUp.html">注册</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="blog"></div>
+</div>
+
+<!--登录页面模板-->
+<script type="text/template" id="signIn">
+    <div class='contentWrap'>
+        <form class="sumitForm" action="/signIn"  method="POST">
+            <div class="nameWrap">
+                <label>用户名</label><input type="text" placeholder="用户名" name="name">
+            </div>
+            <div class="passwordWrap">
+                <label>密码</label>
+                <input type="password" placeholder="密码" name="password">
+            </div>
+            <input class="submit" type="submit" value="登录">
+        </form>
+    </div>
+</script>
+
+<!--js-->
+<script src="js/signIn.js"></script>
+
+</body>
+</html>

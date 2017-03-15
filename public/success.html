@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="shortcut icon"  type="images/x-icon" href="img/favicon.ico" >
+
+    <!--样式表-->
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blog.login.css">
+    <link rel="stylesheet" href="css/blog.post.css">
+
+    <!--第三方js库-->
+    <script src="js/jq/jquery-3.1.1.js"></script>
+    <script src="node_modules/mustache/mustache.min.js"></script>
+
+</head>
+
+<body>
+<div class='main'>
+    <div class='nav'>
+        <div class='nav-title'><a href="success_index.html">Blog</a></div>
+            <div class='nav-login'>
+                <img src='img/bar.png'>
+                <div class='nav-login-box' style='display:none'>
+                    <div class='signIn'><a href="success.html">个人主页</a></div>
+                    <div class='signUp'><a href="write.html">写文章</a></div>
+                    <div class='signUp'><a href="signOut.html">登出</a></div>
+                </div>
+            </div>
+        </div>
+    <div class="content" id="blog"></div>
+</div>
+
+<!--文章模板-->
+<script type="text/template" id="item-template">
+    {{#items}}
+    <div class='Box'>
+        <div class='Box-avatar'><img src='img/avatar1.png'></div>
+        <div class='Box-content'>
+            <div class='Blog-title'><a href="/posts/{{articleId}}">{{title}}</a></div>
+            <div class='Blog-article'>{{content}}</div>
+            <div class='Blog-foot'>
+                <div class='Blog-foot-time'>2017-02-27 22:26</div>
+                <div class='Blog-foot-msg'>浏览(14) 留言(1)</div>
+            </div>
+        </div>
+    </div>
+    {{/items}}
+</script>
+
+<!--js-->
+<script src="js/success.js"></script>
+
+</body>
+</html>

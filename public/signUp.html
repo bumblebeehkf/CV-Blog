@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="shortcut icon"  type="images/x-icon" href="img/favicon.ico" >
+
+    <!--样式表-->
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blog.login.css">
+    <link rel="stylesheet" href="css/blog.post.css">
+
+    <!--第三方js库-->
+    <script src="js/jq/jquery-3.1.1.js"></script>
+    <script src="node_modules/mustache/mustache.min.js"></script>
+
+</head>
+
+<body>
+
+<div class='main'>
+    <div class='nav'>
+        <div class='nav-title'><a href="index.html">Blog</a></div>
+        <div class='nav-login'>
+            <img src='img/bar.png'>
+            <div class='nav-login-box' style='display:none'>
+                <div class='signIn'><a href="signIn.html">登录</a></div>
+                <div class='signUp'><a href="signUp.html">注册</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="blog"></div>
+</div>
+
+<!--注册页面模板-->
+<script type="text/template" id="signUp" >
+    <div class='contentWrap'>
+        <form class="sumitForm" action="/signUp"  method="POST" enctype="multipart/form-data">
+            <div class="nameWrap">
+                <label>用户名</label><input id="name" type="text" placeholder="用户名" name="name">
+            </div>
+            <div class="passwordWrap">
+                <label>密码</label><input id="password" type="password" placeholder="密码" name="password">
+            </div>
+            <div class="passwordRepeat">
+                <label>重复密码</label><input id="passwordRepeat" type="password" placeholder="重复密码" name="passwordRepeat">
+            </div>
+            <div class="sex">
+                <label>性别</label>
+                <select name="sex">
+                    <option value="m">男</option>
+                    <option value="f">女</option><option value="x">保密</option></select>
+            </div>
+            <div class="avatar">
+                <label>头像</label><input id="avatar_value" type="file" name="avatar">
+            </div>
+            <div class="introduce">
+                <label>个人简介</label><textarea name="produce" rows="5"></textarea>
+            </div>
+            <input class="submit" type="submit" value="注册">
+        </form>
+    </div>
+</script>
+
+<!--js-->
+<script src="js/signUp.js"></script>
+
+</body>
+</html>

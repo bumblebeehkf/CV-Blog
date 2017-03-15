@@ -1,0 +1,73 @@
+.nav-login-box {
+    position: absolute;
+    top: 35px;
+    left: -10px;
+    width: 50px;
+    color: rgba(0,0,0,.87);
+    font-size: 14px;
+    border: 1px solid rgba(202,208,205,0.83);
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 0 rgba(34,36,38,.15);
+}
+
+.nav-login-box div {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav-login-box div:hover {
+    background-color: rgba(180,185,182,0.83);
+}
+
+.sumitForm {
+    margin-left: 23px;
+}
+
+.sumitForm input, select {
+    width: 550px;
+    height: 40px;
+    border: 1px solid rgba(202,208,205,0.83);
+    border-radius: 4px;
+}
+
+textarea {
+    width: 550px;
+    border: 1px solid rgba(202,208,205,0.83);
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    color: rgba(0,0,0,.87);
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+label::after {
+    margin: -.2em 0 0 .2em;
+    content: '*';
+    color: #db2828;
+}
+
+.introduce label::after {
+    content:'';
+}
+
+.nameWrap, .passwordWrap, .passwordRepeat, .sex, .avatar, .introduce {
+    margin-top: 10px;
+}
+
+.avatar input {
+    border: none;
+}
+
+.submit {
+    margin-top: 20px;
+    background: #4fc08d;
+    border: 1px solid rgba(202,208,205,0.83);
+    border-radius: 4px;
+    color: #fff!important;
+    text-align: center;
+}
+
