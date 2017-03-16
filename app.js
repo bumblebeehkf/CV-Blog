@@ -15,7 +15,6 @@ app.set('views', path.join(__dirname, 'public'));
 //设置模板引擎
 app.set('view engine', 'mustache');
 
-
 app.use(parser.urlencoded({
     extended: false
 }));
