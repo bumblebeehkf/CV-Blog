@@ -19,6 +19,14 @@ $(document).click(function () {
     $('.nav-login-box').hide();
 });
 
+//提示不能发表空标题
+$('.sumitForm').submit(function() {
+    if($('#title').val() == "") {
+        alert('文章标题不能为空哇 :)');
+        return false;
+    }
+});
+
 
 
 

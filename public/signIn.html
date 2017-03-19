@@ -6,6 +6,7 @@
     <link rel="shortcut icon"  type="images/x-icon" href="img/favicon.ico" >
 
     <!--样式表-->
+    <link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/blog.login.css">
     <link rel="stylesheet" href="css/blog.post.css">
@@ -13,6 +14,7 @@
     <!--第三方js库-->
     <script src="js/jq/jquery-3.1.1.js"></script>
     <script src="node_modules/mustache/mustache.min.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -20,7 +22,7 @@
 
 <div class='main'>
     <div class='nav'>
-        <div class='nav-title'><a href="index.html">Blog</a></div>
+        <div class='nav-title'><a href="index.html">HelloWorld</a></div>
         <div class='nav-login'>
             <img src='img/bar.png'>
             <div class='nav-login-box' style='display:none'>
@@ -35,15 +37,20 @@
 <!--登录页面模板-->
 <script type="text/template" id="signIn">
     <div class='contentWrap'>
-        <form class="sumitForm" action="/signIn"  method="POST">
+        <form  id="form" class="sumitForm" action="/signIn/success"  method="POST">
             <div class="nameWrap">
-                <label>用户名</label><input type="text" placeholder="用户名" name="name">
+                <label>用户名</label><input id="name" type="text" placeholder="用户名" name="name">
             </div>
             <div class="passwordWrap">
                 <label>密码</label>
-                <input type="password" placeholder="密码" name="password">
+                <input id="password" type="password" placeholder="密码" name="password">
             </div>
-            <input class="submit" type="submit" value="登录">
+
+            <!--伪造的submit按钮-->
+            <input id="submit" class="submit" type="" value="登录">
+
+            <!--把提交按钮隐藏起来，先不触发submit事件；收到ajax响应，确认账号密码无误后触发。-->
+            <input id="dd" class="submit" type="submit" value="登录" style="display: none;">
         </form>
     </div>
 </script>

@@ -19,7 +19,7 @@
 <body>
 <div class='main'>
     <div class='nav'>
-        <div class='nav-title'><a href="index.html">Blog</a></div>
+        <div class='nav-title'><a href="index.html">HelloWorld</a></div>
         <div class='nav-login'>
             <img src='img/bar.png'>
             <div class='nav-login-box' style='display:none'>
@@ -35,15 +35,25 @@
 <script type="text/template" id="item-template">
     {{#items}}
     <div class='Box'>
-        <div class='Box-avatar'><img src='img/avatar1.png'></div>
+        <div class='Box-avatar'><img src={{avatar}}></div>
+
+        <div class="Box-msg" style="display: none;">
+            <div class="Box-msg-arrow"></div>
+            <div class="Box-msg-top">
+                <span class="Box-msg-name">{{name}}</span> | <span class="Box-msg-sex">{{sex}}</span>
+            </div>
+            <div class="Box-msg-introduce">{{produce}}</div>
+        </div>
+
         <div class='Box-content'>
             <div class='Blog-title'><a href="/posts/{{articleId}}">{{title}}</a></div>
             <div class='Blog-article'>{{content}}</div>
             <div class='Blog-foot'>
-                <div class='Blog-foot-time'>2017-02-27 22:26</div>
-                <div class='Blog-foot-msg'>浏览(14) 留言(1)</div>
+                <div class='Blog-foot-time'>{{time}}</div>
+                <div class='Blog-foot-msg'>浏览({{pageView}}) 留言({{commentNum}})</div>
             </div>
         </div>
+        <div class="clear"></div>
     </div>
     {{/items}}
 </script>

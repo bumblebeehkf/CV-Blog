@@ -6,6 +6,7 @@
     <link rel="shortcut icon" type="images/x-icon" href="../img/favicon.ico">
 
     <!--样式表-->
+    <link rel="stylesheet" type="text/css" href="../node_modules/sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="../css/blog.login.css">
     <link rel="stylesheet" href="../css/blog.post.css">
@@ -13,13 +14,14 @@
     <!--第三方js库-->
     <script src="../js/jq/jquery-3.1.1.js"></script>
     <script src="../node_modules/mustache/mustache.min.js"></script>
+    <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
 <body>
 <div class='main'>
     <div class='nav'>
-        <div class='nav-title'><a href="../success_index.html">Blog</a></div>
+        <div class='nav-title'><a href="../success_index.html">HelloWorld</a></div>
         <div class='nav-login'>
             <img src='../img/bar.png'>
             <div class='nav-login-box' style='display:none'>
@@ -31,13 +33,20 @@
     <div class="content">
         <!--文章和留言模板-->
             <div class='Box'>
-                <div class='Box-avatar'><img src='../img/avatar1.png'></div>
+                <div class='Box-avatar'><img src={{avatar}}></div>
                 <div class='Box-content'>
                     <div class='Blog-title'>{{title}}</div>
                     <div class='Blog-article'>{{content}}</div>
                     <div class='Blog-foot'>
-                        <div class='Blog-foot-time'>2017-02-27 22:26</div>
-                        <div class='Blog-foot-msg'>浏览(14) 留言(1)</div>
+                        <div class='Blog-foot-time'>{{time}}</div>
+                        <div class='Blog-foot-msg'>
+                            <div class="Blog-num">浏览({{pageView}}) 留言({{commentNum}})</div>
+                            <div class="Blog-edit-icon"><img src="../img/icon1.png" alt=""></div>
+                        </div>
+                        <div class="Blog-edit" style="display: none;">
+                            <div class="Blog-edit-edit"><a href={{articleEdit}}>编辑</a></div>
+                            <div class="Blog-edit-delete"><a href={{articleDelete}}>删除</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -48,9 +57,9 @@
 
                     {{#commentsArray}}
                         <div class='comment-user'>
-                            <div class='comment-user-avatar'><img src="../avatar/avatar1.png" alt=""></div>
+                            <div class='comment-user-avatar'><img src={{comment_avatar}} alt=""></div>
                             <div class='comment-user-content'>
-                                <div class="content-userName">{{user}} <span class="content-time">2017-02-27 22:26</span></div>
+                                <div class="content-userName">{{user}}</div>
                                 <div class="content-introduce">{{comment}}</div>
                             </div>
                         </div>
@@ -58,10 +67,10 @@
 
                     <form class="comment-form" action="/posts/comment" method="post">
                         <!--一个向服务器提供文章id的input-->
-                        <input type="text" name="articleId" value="{{articleId}}" style="display: none;">
+                        <input type="text" name="articleId" value="{{articleId}}" style="display:none;">
 
-                        <textarea name="comment"  cols="30" rows="10"></textarea>
-                        <input type="submit" value="留言">
+                        <textarea name="comment"  cols="30" rows="10" id="comment"></textarea>
+                        <input type="submit" value="评论">
                     </form>
                 </div>
             </div>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="shortcut icon"  type="images/x-icon" href="../../img/favicon.ico" >
+
+    <!--样式表-->
+    <link rel="stylesheet" href="../../css/blog.css">
+    <link rel="stylesheet" href="../../css/blog.write.css">
+
+    <!--第三方js库-->
+    <script src="../../js/jq/jquery-3.1.1.js"></script>
+    <script src="../../node_modules/mustache/mustache.min.js"></script>
+
+</head>
+
+<body>
+
+<div class='main'>
+    <div class='nav'>
+        <div class='nav-title'><a href="../../success_index.html">HelloWorld</a></div>
+        <div class='nav-login'>
+            <img src='../../img/bar.png'>
+            <div class='nav-login-box' style='display:none'>
+                <div class='signIn'><a href="../../success.html">个人主页</a></div>
+                <div class='signUp'><a href="../../write.html">写文章</a></div>
+                <div class='signUp'><a href="../../signOut.html">登出</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="blog"></div>
+</div>
+
+<!--写文章页面模板-->
+<script type="text/template" id="write">
+    <div class="contentWrap">
+        <form class="sumitForm" action="/posts/edit"  method="POST">
+            <!--一个向服务器提供文章id的input-->
+            <input type="text" name="articleId" value="{{articleId}}"  style="display:none;">
+
+            <div class="nameWrap">
+                <label>标题</label><input id="title" type="text"  name="title" value={{title}}>
+            </div>
+            <div class="contentBox">
+                <label>内容</label>
+                <textarea  name="content" id="comment">{{content}}</textarea>
+            </div>
+            <input class="submit" type="submit" value="保存修改">
+        </form>
+    </div>
+</script>
+
+<!--js-->
+<script src="../../js/write.js"></script>
+
+</body>
+</html>

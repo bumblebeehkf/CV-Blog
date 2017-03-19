@@ -18,22 +18,27 @@ $(document).click(function () {
 
 //验证表单中的各个input数据
 $('form').submit(function(){
+
     if($('#name').val() == ''){
-        alert('账户名不能为空！');
+        swal('Welcom to HelloWorld!','账户名不能为空撒 :)');
         return false;
     };
+    if($('#name').val().length > 8){
+        swal('Welcom to HelloWorld!','名字太长啦 :)');
+        return false;
+    };
+
     if($('#password').val() == ''){
-        alert('密码不能为空不能为空！');
-        return false;
-    };
-    if($('#passwordRepeat').val() !== $('#password').val()){
-        alert('重复密码不正确，请再次输入！');
+        swal('Welcom to HelloWorld!','密码不能为空喔 :)');
         return false;
     };
     if($('#avatar_value').val() == ''){
-        alert('头像不能为空！');
+        swal('Welcom to HelloWorld!','头像不能为空哟 :)');
         return false;
     };
+
+
+
 });
 
 

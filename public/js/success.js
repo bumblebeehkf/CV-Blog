@@ -12,6 +12,7 @@ $.ajax({
             $('#blog').html(rendered);
         };
         render();
+
     }
 });
 
@@ -23,6 +24,12 @@ $('.nav-login').click(function (e) {
 $(document).click(function () {
     $('.nav-login-box').hide();
 });
+
+
+
+
+
+
 
 
 

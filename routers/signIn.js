@@ -10,6 +10,7 @@ router.get('/', function (req, res, next) {
     res.sendFile(path.resolve('public/signIn.html'));
 });
 
+//验证账号密码是否正确
 router.post('/', function (req, res, next) {
     //连接MySQL数据库
     var connection = mysql.createConnection({
@@ -35,22 +36,26 @@ router.post('/', function (req, res, next) {
                 var exist = true;
                 connection.query('select password from user where name=?', [req.body.name], function (erro, rows) {
                     if (req.body.password == rows[0].password) {
-
-                        //设置cookie, 发送登录成功页面
-                        res.cookie('userName', req.body.name );
-                        //重定位到个人页面
-                        res.redirect('/posts');
+                        res.send({msg:"账号密码正确"});
                     } else {
-                        res.end('密码错啦');
+                        res.send({msg: "密码错误啦！"});
                     }
                 });
             }
         }
         //用户不存在的情况
         if (!exist) {
-            res.sendfile('public/signUp.html');
+            res.send({msg: "账号不存在啊，请重新输入账号密码"});
         }
     });
 });
+
+//验证成功后发送个人主页
+router.post('/success', function(req, res, next) {
+    //设置cookie, 发送登录成功页面
+    res.cookie('userName', req.body.name );
+    res.redirect('/posts');
+});
+
 
 module.exports = router;

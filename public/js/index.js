@@ -12,6 +12,16 @@ $.ajax({
             $('#blog').html(rendered);
         };
         render();
+
+        //hover方法显示/隐藏作者信息
+        $('.Box-avatar').each(
+            function(){
+                $(this).hover(function() {
+                    $(this).parent().find('.Box-msg').show();
+                },function(){
+                    $(this).parent().find('.Box-msg').hide();
+                })
+            });
     }
 });
 
@@ -23,7 +33,6 @@ $('.nav-login').click(function (e) {
 $(document).click(function () {
     $('.nav-login-box').hide();
 });
-
 
 
 
