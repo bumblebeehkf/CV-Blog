@@ -15,13 +15,17 @@ var connection = mysql.createConnection({
 });
 connection.connect();
 //使用数据库
-connection.query('use Blog');
+connection.query('use blog');
 //创建article表
 connection.query('create table article( name char(15), title char(30), content char(255),' +
     'time char(50), pageView int default 1, commentNum int default 0 ,' +
     'articleId int not null auto_increment, primary key(articleId))', function(erro, rows) {
     if(erro) {}
 });
+//创建comments表
+connection.query('create table comments( articleId char(30), user char(10), comment char(255) )',
+    function (error, row) {});
+
 
 //首页
 router.get('/all', function (req, res, next) {
@@ -203,9 +207,6 @@ router.get('/:articleId', function (req, res, next) {
 
 //用户提交评论后，渲染新的文章详情页
 router.post('/comment', function (req, res, next) {
-    //创建评论表comments
-    connection.query('create table comments( articleId char(30), user char(10), comment char(255) )',
-        function (error, row) {});
     //把新评论存储到comments表中
     connection.query('insert into comments(articleId,user,comment) values(?,?,?)',
         [req.body.articleId, req.cookies.userName, req.body.comment]);
