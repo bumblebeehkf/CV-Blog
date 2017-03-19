@@ -26,6 +26,6 @@ app.use(function(erro,req,res,next) {
     if(erro) {console.log(erro)};
 });
 
-app.listen(4000, '123.57.209.239',function () {
+app.listen(4000, function () {
     console.log('web服务器已启动,端口:%s');
 });
