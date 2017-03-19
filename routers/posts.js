@@ -15,7 +15,7 @@ var connection = mysql.createConnection({
 });
 connection.connect();
 //使用数据库
-connection.query('use blog');
+connection.query('use Blog');
 //创建article表
 connection.query('create table article( name char(15), title char(30), content char(255),' +
     'time char(50), pageView int default 1, commentNum int default 0 ,' +
