@@ -11,7 +11,8 @@ router.use(cookieParser());
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'qq6257364'
+    password: 'qq6257364',
+    charset:'utf8_general_ci'
 });
 connection.connect();
 //使用数据库
