@@ -6,6 +6,16 @@ module.exports = function (app) {
         res.sendFile(path.resolve('public/index.html'));
     });
 
+    //注册页路由
+    app.use('/signUp', require('./signUp'));
+
+    //登录页路由
+    app.use('/signIn', require('./signIn'));
+
+    //文章页路由
+    app.use('/posts', require('./posts'))
+
+
     //以下为三个静态网页路由
     app.get('/zhihu', function(req, res) {
         res.sendFile(path.resolve('public/works/zhihu/index.html'));
@@ -18,14 +28,5 @@ module.exports = function (app) {
     app.get('/chuizi', function(req, res) {
         res.sendFile(path.resolve('public/works/smartisan/index.html'));
     });
-
-    //注册页路由
-    app.use('/signUp', require('./signUp'));
-
-    //登录页路由
-    app.use('/signIn', require('./signIn'));
-
-    //文章页路由
-    app.use('/posts', require('./posts'))
 
 }
