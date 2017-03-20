@@ -7,6 +7,7 @@ var app = express();
 var mustacheExpress = require('mustache-express');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public/works')));
 app.use(express.static(path.join(__dirname, 'public/works/zhihu')));
 app.use(express.static(path.join(__dirname, 'public/works/mi')));
 app.use(express.static(path.join(__dirname, 'public/works/smartisan')));
