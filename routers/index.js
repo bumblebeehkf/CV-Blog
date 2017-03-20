@@ -15,4 +15,18 @@ module.exports = function (app) {
     //文章页路由
     app.use('/posts', require('./posts'))
 
+
+    //以下为三个静态网页路由
+    app.get('/zhihu', function(req, res) {
+        res.sendFile(path.resolve('public/works/zhihu/index.html'));
+    });
+
+    app.get('/xiaomi', function(req, res) {
+        res.sendFile(path.resolve('public/works/mi/mi.html'));
+    });
+
+    app.get('/chuizi', function(req, res) {
+        res.sendFile(path.resolve('public/works/smartisan/index.html'));
+    });
+
 }
